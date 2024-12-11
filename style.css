@@ -679,8 +679,9 @@ footer p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .how-to-buy-grid {
-        grid-template-columns: 1fr;
-        width: 100% !important;
+        width: 120% !important;
+        grid-template-columns: repeat(5, minmax(85%, 1fr));
+        overflow: scroll;
     }
 
     .how-to-buy-item-wide {
