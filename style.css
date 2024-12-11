@@ -648,6 +648,8 @@ footer p {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 90%;
     margin: 10px auto;
+    z-index:999993;
+
 }
 
 /* Nav Container */
@@ -656,6 +658,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    z-index:999993;
 }
 
 /* Mobile Menu */
