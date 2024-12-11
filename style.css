@@ -48,7 +48,7 @@ body {
 /* Titles and fonts */
 .comic-title {
     font-family: 'Bangers', cursive;
-    font-size: 3em;
+    font-size: 5em;
     text-transform: uppercase;
     text-shadow: 2px 2px #FF6F61;
     color: #fff !important;
@@ -526,6 +526,7 @@ footer p {
 .story-panel {
     flex: 1 1 calc(33% - 20px);
     min-width: 250px;
+    max-width: 550px;
     border: 4px solid #000;
     background: #FFF;
     padding: 20px;
