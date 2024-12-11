@@ -607,13 +607,18 @@ footer p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .how-to-buy-grid {
-        width: 120% !important;
+        width: 114% !important;
         grid-template-columns: repeat(5, minmax(85%, 1fr));
         overflow: scroll;
+        gap: 0;
     }
 
     .how-to-buy-item-wide {
         grid-column: span 1;
+        font-size: 1.2em;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
     }
     .how-to-buy-item {
         font-size: 1.2em;
