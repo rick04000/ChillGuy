@@ -143,3 +143,16 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 });
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function() {
+    const navLinksDiv = document.querySelector('.nav-links');
+    if (navLinksDiv) {
+      navLinksDiv.style.setProperty('display', 
+        navLinksDiv.style.display === 'none' ? 'block' : 'none', 
+        'important'
+      );
+    }
+  });
+});
+
