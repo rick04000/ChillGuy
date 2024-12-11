@@ -209,10 +209,36 @@ footer .speech-bubble {
     color: #000;
 }
 footer p {
-    color: #E0E0E0;
-    margin-top: 20px;
+    color: #2d2a2a;
 }
 
+/* Community Links */
+.community-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.community-links a {
+    display: inline-block;
+    border: 3px solid #000;
+    background: #FF6F61; 
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Comic Neue', cursive;
+    transition: transform 0.2s ease, background 0.2s ease;
+    font-weight: bold;
+}
+.community-links a:hover {
+    transform: scale(1.05) rotate(-2deg);
+    background: #FF6F61;
+    color: #fff;
+}
+.community-links i {
+    margin-right: 8px;
+}
 
 
 /* Scroll Indicator */
@@ -480,10 +506,10 @@ footer p {
         font-size: 0.9em;
     }
     .faq-accordion-header {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .faq-accordion-content {
-        font-size: 0.9em;
+        font-size: 1.1em;
 
     }
 }
@@ -660,7 +686,7 @@ footer p {
         grid-column: span 1;
     }
     .how-to-buy-item {
-        font-size: .8em;
+        font-size: 1.2em;
     }
 }
 
