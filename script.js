@@ -149,6 +149,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links');
     const navLinkItems = document.querySelectorAll('.nav-link');
 
+    if (!menuToggle || !navLinks) {
+        console.error('Menu toggle or nav links not found. Please check your selectors.');
+        return;
+    }
+
     // Toggle menu on hamburger click
     menuToggle.addEventListener('click', (event) => {
         event.stopPropagation(); // Prevent closing the menu when clicking on the toggle
@@ -174,5 +179,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 
 
