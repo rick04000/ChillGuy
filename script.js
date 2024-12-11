@@ -98,35 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    const navLinkItems = document.querySelectorAll('.nav-link');
 
-    if (!menuToggle || !navLinks) {
-        console.error('Menu toggle or nav links not found. Please check your selectors.');
-        return;
-    }
-
-
-    // Close menu when clicking on a nav-link
-    navLinkItems.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth <= 768) { // Ensure this works only on mobile
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-            }
-        });
-    });
-
-    // Close menu when clicking outside the dropdown
-    document.addEventListener('click', (event) => {
-        if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
-            navLinks.classList.remove('active');
-            menuToggle.classList.remove('active');
-        }
-    });
-});
 
 
 
