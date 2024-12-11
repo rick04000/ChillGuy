@@ -607,18 +607,13 @@ footer p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .how-to-buy-grid {
-        width: 114% !important;
+        width: 120% !important;
         grid-template-columns: repeat(5, minmax(85%, 1fr));
         overflow: scroll;
-        gap: 0;
     }
 
     .how-to-buy-item-wide {
         grid-column: span 1;
-        font-size: 1.2em;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
     }
     .how-to-buy-item {
         font-size: 1.2em;
@@ -648,8 +643,6 @@ footer p {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 90%;
     margin: 10px auto;
-    z-index:999993;
-
 }
 
 /* Nav Container */
@@ -658,7 +651,6 @@ footer p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    z-index:999993;
 }
 
 /* Mobile Menu */
